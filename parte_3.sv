@@ -1,3 +1,5 @@
+`timescale 1ns/100ps
+
 module contadorMOD10(output reg [3:0]bit_out, output reg carryout, input carryin, reset);
   always @ (negedge carryin or negedge reset)
     begin
@@ -17,6 +19,13 @@ module contadorMOD10(output reg [3:0]bit_out, output reg carryout, input carryin
     end
 endmodule
 
+module registrador (output reg [3:0] Qo, input [3:0] Qi, input clk, load);
+  always @ (negedge clk)
+    begin
+      if(load)
+        Qo = Qi;
+    end
+endmodule
 
 module bcd27seg (output a, b, c, d, e, f, g, input [3:0] BCD);
 assign {a, b, c, d, e, f, g} = ( BCD == 4'b0000 ) ? 7'b1111110 : //0
