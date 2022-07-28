@@ -1,4 +1,3 @@
-// Write your modules here!
 module contadorMOD10(output reg [3:0]bit_out, output reg carryout, input carryin, reset);
   always @ (negedge carryin or negedge reset)
     begin
