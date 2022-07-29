@@ -1,5 +1,4 @@
 module fsm (output reg [2:0] ch, output en_0, reset, input en_3, Vint_z, clk, iniciar);
-  //ch[0]: ch_vm; ch[1]: ch_ref; ch[2]: ch_zr;
   always @ (negedge clk or posedge iniciar)
     begin
       if (iniciar)
