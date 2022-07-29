@@ -6,7 +6,7 @@ Artur Weber - , <br>
 Caio Oliveira Godinho - 12731996, <br>
 Daniel Contente Romanzini - , <br>
 Gabriel Henrique Brioto - , <br>
-Guilherme Chiarotto de Moraes - , <br>
+Guilherme Chiarotto de Moraes - 12745229 , <br>
 Hugo Hiroyuki Nakamura - .
 
 ## Parte 3
