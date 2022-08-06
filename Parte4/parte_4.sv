@@ -1,3 +1,11 @@
+/*
+  PARTE 4 - ADC DE RAMPA DUPLA COM MÁQUINA DE ESTADOS.
+  Integrantes: Artur Weber, Caio Godinho, Daniel Contente, Gabriel Brioto, Guilherme Chiarotto, Hugo Nakamura.
+  Professor: Maxmilliam Luppe.
+*/
+
+`timescale 1ns/100ps
+
 //MODULO DA MÁQUINA DE ESTADOS.
 module fsm (output reg [2:0] ch, output en_0, reset, input en_3, Vint_z, clk, iniciar);
   always @ (posedge clk or posedge iniciar) //toda vez que ocorrer uma borda positiva de clock ou iniciar.
