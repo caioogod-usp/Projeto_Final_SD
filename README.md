@@ -14,4 +14,5 @@ Hugo Hiroyuki Nakamura - 12732037.
   
  
 ## Parte 4
-  Na última parte do projeto, foi criado o módulo para um conversor análógico para digital do tipo rampa dupla (fsm). O módulo encontra-se na pasta Parte4, junto com a representação em RTL do seu circuito.  
+  Na última parte do projeto, foi criado o módulo para um conversor análógico para digital do tipo rampa dupla (fsm). O módulo encontra-se na pasta Parte4, junto com a representação em RTL do seu circuito.
+  O conversor analógico-digital de rampa dupla implementado recebe um sinal de entrada (Vm) e o reproduz em um sinal digital de 0 a 999. A partir de uma máquina de estados, controla-se o carregamento e o descarregamento de um circuito integrador, gerando um sinal triangular (rampa dupla). Esse sinal triangular tem o pico em 'Vm' e sempre leva um tempo 'tx' no seu carregamento, com
