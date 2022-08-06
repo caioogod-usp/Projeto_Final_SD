@@ -4,22 +4,13 @@
 module contadorMOD10(output reg [3:0]bit_out, output reg en_out, input en_in, clk, reset);
   always @ (posedge clk or posedge reset) //toda vez que ocorrer uma posedge de clock ou uma posedge de reset.
     begin
-      en_out = 1'b0;
-      if(reset)
-        bit_out = 0;
+      if(reset) bit_out = 0; //se o botao de reset for acionado, saída vai a '0'.
       else if(en_in)
-        if(bit_out == 9)
-          begin
-            bit_out = 0;
-            en_out = 1'b0;
-          end
-      	else
-          begin
-            bit_out++;
-            if(bit_out == 9)
-              en_out = 1'b1;
-          end
+        if(bit_out == 9) bit_out = 0; //se a contagem chegar em '9', no próximo clock, a contagem reinicia.
+      	else bit_out++; //senão, adiciona mais um a contagem.
     end
+  
+  assign en_out = en_in & bit_out[0] & bit_out[3]; //quando a en_in estiver habilitada e bit_out = 9, en_out vai a 1.
 endmodule
 
 //REGISTRADOR COM FLIF FLOP TIPO D.
