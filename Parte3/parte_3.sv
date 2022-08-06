@@ -1,3 +1,9 @@
+/*
+  PARTE 3 - CONTADOR MOD 1000 BCD PARA 7 SEGMENTOS.
+  Integrantes: Artur Weber, Caio Godinho, Daniel Contente, Gabriel Brioto, Guilherme Chiarotto, Hugo Nakamura.
+  Professor: Maxmilliam Luppe.
+*/
+
 `timescale 1ns/100ps
 
 //MÓDULO CONTADOR MOD 10.
